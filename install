@@ -1,0 +1,12 @@
+#!/usr/bin/env zsh
+set -e
+cd "${0:A:h}"
+
+# Clone dotbot if absent
+if [ ! -d "dotbot" ]; then
+  echo "🔧 Cloning Dotbot..."
+  git clone https://github.com/anishathalye/dotbot.git dotbot
+fi
+
+# Install using Dotbot
+dotbot/bin/dotbot -d . -c install.conf.yaml

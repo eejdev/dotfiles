@@ -1,0 +1,27 @@
+[alias]
+  st = status -sb
+  co = checkout
+  br = branch
+  cm = commit -m
+  ca = commit --amend
+  hist = log --pretty=format:'%C(auto)%h%d %s %C(black)%C(bold)%cr%Creset %Cgreen(%an)%Creset' --graph
+  lg = log --oneline --graph --decorate --all
+  last = log -1 HEAD
+  s = status
+  d = diff
+  ds = diff --staged
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  pom = push origin main
+  plom = pull origin main
+  undo = reset --soft HEAD~1
+  wipe = reset --hard HEAD
+  unstage = reset HEAD --
+  tags = tag -l
+  who = shortlog -sn
+  what = show --name-only
+  aliases = config --get-regexp alias
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/

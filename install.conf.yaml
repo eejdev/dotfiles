@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      relink: true  
+      create: true
+
+- link:
+    ~/.zshrc: dotfiles/zsh/.zshrc
+    ~/.config/nvim: dotfiles/nvim
+    ~/.config/pip: dotfiles/python/pip
+    ~/.config/iterm2: dotfiles/iterm2
+    ~/.profile: dotfiles/common/.profile
+    ~/.gitconfig: dotfiles/common/.gitconfig
+
+- shell:
+    - |
+      if ! grep -q 'export DOTFILES=' ~/.zshrc; then
+        echo "# Set DOTFILES path — added by install script" >> ~/.zshrc
+        echo "export DOTFILES=\"$PWD\"" >> ~/.zshrc
+      fi
+
+    - [brew bundle --file=Brewfile, "Installing Brew packages"]
+    - [bash dotfiles/macos/macos-defaults.sh, "Apply macOS settings"]
+    - [bash dotfiles/iterm2/iterm2-settings.sh, "Configure iTerm2"]
+
