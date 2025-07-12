@@ -12,12 +12,6 @@
     ~/.gitconfig: dotfiles/common/.gitconfig
 
 - shell:
-    - |
-      if ! grep -q 'export DOTFILES=' ~/.zshrc; then
-        echo "# Set DOTFILES path — added by install script" >> ~/.zshrc
-        echo "export DOTFILES=\"$PWD\"" >> ~/.zshrc
-      fi
-
     - [brew bundle --file=Brewfile, "Installing Brew packages"]
     - [bash dotfiles/macos/macos-defaults.sh, "Apply macOS settings"]
     - [bash dotfiles/iterm2/iterm2-settings.sh, "Configure iTerm2"]

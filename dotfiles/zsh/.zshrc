@@ -5,6 +5,6 @@ ZSH_THEME="agnoster"
 plugins=(git)
 
 # === Source Modular Zsh Files ===
-for file in $DOTFILES/dotfiles/*/*.zsh(.N); do
+for file in $DOTFILES/*/*.zsh(.N); do
   source "$file"
 done
