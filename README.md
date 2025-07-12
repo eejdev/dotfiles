@@ -123,5 +123,4 @@ export PATH="$DOTFILES/bin:$PATH"
 ---
 
 > “Build your rig. Tune it like a weapon. Then forget it’s even there.”  
-> — Inspired by Disco Elysium
 
