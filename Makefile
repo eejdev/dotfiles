@@ -1,19 +1,13 @@
 # Makefile — dotfiles automation
-.PHONY: all brew iterm2 go-links macos nvim cleanup
+.PHONY: all brew iterm2 macos nvim mini cleanup
 
-all: brew iterm2 macos 
+all: brew iterm2 macos nvim
 
 mini: iterm2 nvim
 
 brew:
 	@echo "🍺 Installing Homebrew packages..."
 	@brew bundle --file=Brewfile
-
-nvim:
-	@echo "💻 Setting up Neovim config..."
-	@ln -sfn $(PWD)/dotfiles/nvim ~/.config/nvim
-	@echo "🔁 Symlinked Neovim config"
-	@nvim --headless "+Lazy! sync" +qa || true
 
 iterm2:
 	@echo "🖥 Configuring iTerm2..."
@@ -22,4 +16,13 @@ iterm2:
 macos:
 	@echo "🛠️  Applying macOS system defaults..."
 	@bash dotfiles/macos/macos-defaults.sh
+
+nvim:
+	@echo "💻 Setting up Neovim..."
+	@nvim --headless "+Lazy! sync" +qa || true
+
+cleanup:
+	@echo "🧹 Cleaning up broken symlinks..."
+	find ~ -type l ! -exec test -e {} \; -delete
+
 
