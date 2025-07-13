@@ -14,6 +14,8 @@ brew "graphviz"
 brew "mermaid-cli"
 brew "luarocks"
 brew "npm"
+brew "amfora"
+brew "weechat"
 cask "kitty"
 cask "font-fira-code"
 

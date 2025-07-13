@@ -10,6 +10,8 @@
     ~/.config/iterm2: dotfiles/iterm2
     ~/.profile: dotfiles/common/.profile
     ~/.gitconfig: dotfiles/common/.gitconfig
+    ~/.config/amfora: dotfiles/amfora
+    ~/.local/share/amfora/bookmarks.xml: dotfiles/amfora/bookmarks.xml
 
 - shell:
     - [brew bundle --file=Brewfile, "Installing Brew packages"]
