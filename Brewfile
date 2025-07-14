@@ -15,7 +15,7 @@ brew "mermaid-cli"
 brew "luarocks"
 brew "npm"
 brew "amfora"
-brew "weechat"
+brew "zk"
 cask "kitty"
 cask "font-fira-code"
 
