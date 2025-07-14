@@ -15,7 +15,6 @@ return {
       notifier = { enabled = true },
       terminal = { enabled = true },
       toggle = { enabled = true },
-      -- add others as needed
     },
     keys = {
       {
