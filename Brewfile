@@ -16,9 +16,6 @@ brew "luarocks"
 brew "npm"
 brew "bat"
 brew "eza"
-brew "amfora"
-brew "zk"
-cask "kitty"
 cask "font-fira-code"
 
 
