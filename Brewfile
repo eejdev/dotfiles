@@ -16,6 +16,6 @@ brew "luarocks"
 brew "npm"
 brew "bat"
 brew "eza"
+brew "gitleaks"
+brew "pre-commit"
 cask "font-fira-code"
-
-

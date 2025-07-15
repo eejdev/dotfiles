@@ -1,0 +1,9 @@
+repos:
+  - repo: local
+    hooks:
+      - id: gitleaks-scan
+        name: Gitleaks secret scan
+        entry: gitleaks detect --no-git -v --redact
+        language: system
+        types: [text]
+        pass_filenames: false

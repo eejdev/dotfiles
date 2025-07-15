@@ -1,0 +1,10 @@
+# ~/.gitignore_global
+.env
+*.key
+*.pem
+*.crt
+*.enc
+*.token
+secrets.*
+.DS_Store
+

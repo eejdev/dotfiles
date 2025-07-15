@@ -9,7 +9,8 @@
     ~/.config/pip: dotfiles/python/pip
     ~/.config/iterm2: dotfiles/iterm2
     ~/.profile: dotfiles/common/.profile
-    ~/.gitconfig: dotfiles/common/.gitconfig
+    ~/.gitconfig: dotfiles/git/.gitconfig
+    ~/.gitignore_global: dotfiles/git/.gitignore_global
 
 - shell:
     - [brew bundle --file=Brewfile, "Installing Brew packages"]
