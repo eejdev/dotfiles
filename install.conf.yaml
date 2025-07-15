@@ -1,6 +1,6 @@
 - defaults:
     link:
-      relink: true  
+      relink: true
       create: true
 
 - link:
@@ -13,7 +13,7 @@
 
 - shell:
     - [brew bundle --file=Brewfile, "Installing Brew packages"]
-    - [bash dotfiles/common/fzf.sh, "Install fzf keybinds"]
+    - [bash dotfiles/terminal/fzf.sh, "Install fzf keybinds"]
     - [bash dotfiles/macos/macos-defaults.sh, "Apply macOS settings"]
     - [bash dotfiles/iterm2/iterm2-settings.sh, "Configure iTerm2"]
 
