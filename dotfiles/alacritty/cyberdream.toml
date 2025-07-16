@@ -1,0 +1,43 @@
+# cyberdream theme for alacritty - https://github.com/scottmckendry/cyberdream.nvim/blob/main/extras/alacritty/cyberdream.toml
+# Custom Cyberdream theme for Alacritty
+# Matches Neovim Cyberdream (variant = "default", transparent = true, desaturated)
+
+[window]
+opacity = 0.3       # Adjust this to taste (0.0 = fully transparent, 1.0 = opaque)
+blur = true          # Optional: enable macOS blur behind window
+
+[colors.primary]
+background = "0x000000"   # Match your Neovim 'bg'
+foreground = "0xeeeeee"
+
+[colors.normal]
+black   = "0x16181a"
+red     = "0xff5c57"          # Matches light.red
+green   = "0x00ff00"          # Matches colors.green
+yellow  = "0xf1ff5e"
+blue    = "0x5ea1ff"
+magenta = "0xff00ff"          # Matches dark.magenta
+cyan    = "0x5ef1ff"
+white   = "0xffffff"
+
+[colors.bright]
+black   = "0x3c4048"
+red     = "0xff5c57"
+green   = "0x00ff00"
+yellow  = "0xf1ff5e"
+blue    = "0x5ea1ff"
+magenta = "0xff00ff"
+cyan    = "0x5ef1ff"
+white   = "0xffffff"
+
+[colors.selection]
+background = "0x3c4048"       # Subtle selection color
+
+[[colors.indexed_colors]]
+index = 16
+color = "0xffbd5e"
+
+[[colors.indexed_colors]]
+index = 17
+color = "0xff6e5e"
+

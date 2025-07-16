@@ -11,10 +11,12 @@
     ~/.profile: dotfiles/common/.profile
     ~/.gitconfig: dotfiles/git/.gitconfig
     ~/.gitignore_global: dotfiles/git/.gitignore_global
+    ~/.config/alacritty: dotfiles/alacritty
+    ~/.config/starship.toml: dotfiles/starship/starship.toml
 
 - shell:
     - [brew bundle --file=Brewfile, "Installing Brew packages"]
     - [bash dotfiles/terminal/fzf.sh, "Install fzf keybinds"]
     - [bash dotfiles/macos/macos-defaults.sh, "Apply macOS settings"]
-    - [bash dotfiles/iterm2/iterm2-settings.sh, "Configure iTerm2"]
+
 

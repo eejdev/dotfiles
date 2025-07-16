@@ -1,0 +1,81 @@
+# disco theme
+add_newline = false
+command_timeout = 1000
+
+format = """
+[󰀘]($style) $username$hostname$directory$git_branch$git_status
+$nodejs$python$rust$cmd_duration
+$character
+"""
+
+[character]
+success_symbol = "[➤](bold #00ff9f)"
+error_symbol = "[✖](bold #ff4f4f)"
+vicmd_symbol = "[▌](bold #bd5eff)"  # Vi mode: vertical beam like a brush stroke
+
+[directory]
+style = "italic bold #7ab2ff"
+read_only = " 🔒"
+truncation_length = 2
+truncation_symbol = ""
+format = "[📁 $path]($style)[$read_only]($style) "
+
+[git_branch]
+symbol = ""
+style = "bold #ff99ff"
+format = " [ $branch]($style)"
+
+[git_status]
+style = "#ff99ff"
+format = ' ([\[$all_status$ahead_behind\]]($style))'
+
+[nodejs]
+symbol = ""
+style = "bold #5ef1ff"
+format = " [$symbol $version]($style)"
+
+[python]
+symbol = ""
+style = "bold #9eff6c"
+format = " [$symbol $version]($style)"
+
+[rust]
+symbol = ""
+style = "bold #ff6e5e"
+format = " [$symbol $version]($style)"
+
+[cmd_duration]
+min_time = 300
+style = "dimmed italic #44475a"
+format = "[⏱  $duration]($style)"
+
+[hostname]
+ssh_only = false
+style = "italic #ff5c57"
+format = "[☁ $hostname]($style) "
+
+[username]
+style_user = "bold #dddddd"
+style_root = "bold red"
+format = "[👤 $user]($style) "
+
+[memory_usage]
+disabled = true
+
+[time]
+disabled = false
+style = "italic dimmed #696969"
+format = "[🕒 $time]($style)"
+time_format = "%H:%M"
+
+[battery]
+disabled = false
+full_symbol = "🔋 "
+charging_symbol = "⚡"
+discharging_symbol = "🔻"
+style = "bold #f1ff5e"
+format = " [$symbol$percentage]($style) "
+
+[package]
+disabled = true
+

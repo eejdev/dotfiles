@@ -9,7 +9,6 @@ Use for inspiration for fork it.
 ## ✨ Features
 
 - Symlinked configs using Dotbot
-- macOS defaults & iTerm2 preferences
 - Brewfile for installing system packages
 - Neovim with LazyVim plugins (Python-focused)
 - Clean shell setup with Zsh
@@ -22,5 +21,4 @@ Use for inspiration for fork it.
 - All scripts live inside `dotfiles/`, not `setup/`, for cleaner structure
 - This repo assumes Homebrew is installed
 
-> “Build your rig. Tune it like a weapon. Then forget it’s even there.”  
-
+> Before enlightenment, chop wood, carry water. After enlightenment, chop wood, carry water.
